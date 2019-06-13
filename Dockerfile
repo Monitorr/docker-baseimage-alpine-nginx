@@ -1,4 +1,4 @@
-FROM tronyx/base-alpine
+FROM monitorr/base-alpine
 
 # install packages
 RUN \
