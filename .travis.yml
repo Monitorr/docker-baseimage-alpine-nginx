@@ -4,10 +4,10 @@ services:
 language: bash
 script:
   # Build image
-  - docker build -t organizrtools/base-alpine-nginx .
+  - docker build -t monitorr/base-alpine-nginx .
   # Test image
-  - docker run organizrtools/base-alpine-nginx nginx -v
+  - docker run monitorr/base-alpine-nginx nginx -v
 after_success:
   # Push image if not a PR
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then docker login -u "$DOCKER_USER" -p "$DOCKER_PASS" ${DOCKER_REGISTRY}; fi'
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then docker push organizrtools/base-alpine-nginx; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then docker push monitorr/base-alpine-nginx; fi'
