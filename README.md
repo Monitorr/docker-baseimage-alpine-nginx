@@ -1,4 +1,4 @@
-# organizrtools/docker-baseimage-alpine-nginx
+# monitorr/docker-baseimage-alpine-nginx
 
 [![Build Status](https://travis-ci.org/monitorr/docker-baseimage-alpine-nginx.svg?branch=master)](https://travis-ci.org/monitorr/docker-baseimage-alpine-nginx)
 
